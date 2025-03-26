@@ -77,6 +77,23 @@ if __name__ == "__main__":
 ```
 
 ## Análise do Algoritmo
+
+### Estrutura Recursiva e Divisão do Problema
+
+O algoritmo divide a lista original recursivamente ao meio, o que caracteriza a abordagem de **Divisão e Conquista**.
+
+- **Divisão**: Cada chamada recursiva divide a lista ao meio, o que reduz o problema em partes menores.
+- **Conquista**: Uma vez que a lista é dividida em sublistas de um ou dois elementos, o algoritmo resolve o problema diretamente.
+- **Combinação**: O algoritmo combina as soluções parciais para fornecer a resposta final.
+
+### Comparações Realizadas
+
+Quando a lista é dividida em subproblemas menores, a base da recursão é alcançada quando a lista possui apenas um ou dois elementos. O algoritmo faz as seguintes comparações:
+
+- **Para um único elemento**: Não há necessidade de comparação, já que ele é tanto o menor quanto o maior elemento.
+- **Para dois elementos**: Realiza-se uma comparação direta para determinar qual é o menor e qual é o maior.
+- **Para sublistas maiores**: A solução é obtida recursivamente, e o algoritmo então combina as soluções dos subproblemas, realizando mais comparações para determinar o menor valor entre os menores e o maior valor entre os maiores.
+
 ### Contagem de Operações
 O algoritmo divide a lista ao meio recursivamente até obter sublistas de um ou dois elementos, onde realiza comparações diretas. Depois, combina os resultados escolhendo o menor e o maior entre os subproblemas.
 
